@@ -1,0 +1,126 @@
+
+body {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("https://preview.redd.it/lhaiocosfdv61.png?width=640&crop=smart&auto=webp&s=d014511bc97200d0cef68d4e70e77714a6cb784a");
+}
+
+#display-panel {
+    border: 2px solid blue;
+    border-radius: 50px;
+    height: 100px;
+    width: 800px;
+    font-size: 50px;
+    text-align: center;
+    line-height: 100px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculator {
+    display: grid;
+    grid-template-areas: "digit-7 digit-8 digit-9 power sqrt"
+                         "digit-4 digit-5 digit-6 multiply divide"
+                         "digit-1 digit-2 digit-3 add subtract"
+                         "digit-0 period reverse clear equals";
+    height: 400px;
+    width: 800px;
+}
+#digit-7 {
+    grid-area: digit-7;
+}
+#digit-8 {
+    grid-area: digit-8;
+}
+#digit-9 {
+    grid-area: digit-9;
+}
+#power {
+    grid-area: power;
+}
+#sqrt {
+    grid-area: sqrt;
+}
+#digit-4 {
+    grid-area: digit-4;
+}
+#digit-5 {
+    grid-area: digit-5;
+}
+#digit-6 {
+    grid-area: digit-6;
+}
+#multiply {
+    grid-area: multiply;
+}
+#divide {
+    grid-area: divide;
+}
+#digit-1 {
+    grid-area: digit-1;
+}
+#digit-2 {
+    grid-area: digit-2;
+}
+#digit-3 {
+    grid-area: digit-3;
+}
+#add {
+    grid-area: add;
+}
+#subtract {
+    grid-area: subtract;
+}
+#digit-0 {
+    grid-area: digit-0;
+}
+#period {
+    grid-area: period;
+}
+#reverse {
+    grid-area: reverse;
+}
+#clear {
+    grid-area: clear;
+}
+#equals {
+    grid-area: equals;
+}
+
+.digits {
+    background-color: lightslategray;
+}
+
+.operators {
+    background-color: #FF8C00;
+}
+
+.calculator-buttons, .extra {
+    border-radius: 25px;
+    font-size: 50px;
+    text-align: center;
+    line-height: 100px;
+}
+
+#clear {
+    background-color: #DC143C;
+}
+
+#equals {
+    background-color: #5D3FD3;
+}
+
+#period, #reverse {
+    background-color: #00FFFF;
+}
+
+#clicked {
+    filter: brightness(110%);
+    color: lime;
+}
